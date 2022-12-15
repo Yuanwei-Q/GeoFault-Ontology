@@ -2,7 +2,7 @@
 GeoFault is an ontology for capturing the descriptive knowledge of geological fault.
 The file is in OWL 2 language, we recommend to use [Protégé editor](https://protege.stanford.edu/) to open it.
 
-# Contributor
+# Contributors
 - Yuanwei Qu (corresponding authro, Department of Informatics,University of Oslo) (email: quy@ifi.uio.no)
 - Michel Perrin (Geosits SAS)
 - Anita Torabi (Department of Geoscience, University of Oslo)
