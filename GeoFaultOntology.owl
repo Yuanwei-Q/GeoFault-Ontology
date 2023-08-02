@@ -255,10 +255,340 @@ Wibberley, C.A., Yielding, G., Di Toro, G., 2008. Recent advances in the underst
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Cataclasite -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#cohesive -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Cataclasite">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_rock"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#cohesive">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:cohesion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>cohesive</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">cohesive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#composite_shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#composite_shape">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface_shape"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>composite</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">composite shape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#continuous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#continuous">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:continuity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>continuous</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#semicontinuous"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#curved_shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#curved_shape">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface_shape"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>curved</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">curved shape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#irregular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#irregular">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface_shape"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>irregular</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface_shape"/>
+        <rdfs:label xml:lang="en">irregular</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#is_smeared -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#is_smeared">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:smeared"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>is smeared</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:smeared"/>
+        <rdfs:label xml:lang="en">is smeared</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#non-cohesive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#non-cohesive">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:cohesion"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>non-cohesive</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">non-cohesive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#not_smeared -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#not_smeared">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:smeared"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>not smeared</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:smeared"/>
+        <rdfs:label xml:lang="en">not smeared</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#planar_shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#planar_shape">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface_shape"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>planar</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">planar shape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#semicontinuous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#semicontinuous">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:continuity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>semicontinuous</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:anastomosing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:anastomosing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system_structure"/>
+        <obo:IAO_0000115 xml:lang="en">Anastomosing: a set of fault surfaces that merge and diverge along strike, thereby creating a braided pattern in map view or cross section.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anastomosing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:antithetic_fault -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:antithetic_fault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:minor_fault"/>
+        <obo:IAO_0000115 xml:lang="en">Antithetic Fault: a Subsidiary Fault. It can be realized when a Fault Zone having a dip direction cojugate to that of the Major Fault Zone belonging to the same Fault System.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Reference: Van der Pluijm et al. (2004a)</rdfs:comment>
+        <rdfs:label xml:lang="en">antithetic fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:barrier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:barrier">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_zone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Barrier: a role that is role_of some Fault Zone that not allows fluid flow.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Reference: Caine et al.( 1996)</rdfs:comment>
+        <rdfs:label xml:lang="en">barrier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:cataclasite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:cataclasite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_rock"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -271,7 +601,7 @@ Wibberley, C.A., Yielding, G., Di Toro, G., 2008. Recent advances in the underst
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Large_Clasts_proportion"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:large_clasts_proportion"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
                                 <owl:someValuesFrom>
@@ -298,69 +628,212 @@ Superclass: Brittle Fault Rock (Def.13)</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Composite_Shape -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:chatter_mark -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Composite_Shape">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Surface_Shape"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>composite</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label xml:lang="en">composite shape</rdfs:label>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:chatter_mark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_displacement_indicator"/>
+        <obo:IAO_0000115 xml:lang="en">Chatter Mark: a small wedge-shaped structure that indicates one Fault Wall moves past another.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">chatter mark</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Curved_Shape -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:cohesion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Curved_Shape">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Surface_Shape"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:cohesion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rock_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>cohesive</rdf:first>
+                                <rdf:rest>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>curved</rdf:first>
+                                        <rdf:first>non-cohesive</rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                                     </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label xml:lang="en">curved shape</rdfs:label>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Cohesion: a Rock Quality inheres in rock. It measures the capability of a rock  being broken into component granules with fingers or with the aid of a pen knife.
+Values: Cohesion, Non-cohesion</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Reference: Brodie et al. (2007).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Values: Cohesion, Non-cohesion</rdfs:comment>
+        <rdfs:label xml:lang="en">cohesion</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Dextral_Fault -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:conduit -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Dextral_Fault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#strike-slip_fault"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Sinistral_fault"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:conduit">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_zone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Conduit: a role that is role_of some Fault Zone that t allows fluid flow.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Reference: Caine et al.( 1996)</rdfs:comment>
+        <rdfs:label xml:lang="en">conduit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:conjugate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:conjugate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system_structure"/>
+        <obo:IAO_0000115 xml:lang="en">Conjugate: a number of fault surfaces can be grouped into two sets that are inclined to one another at an angle of about 60°.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">conjugate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:continuity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:continuity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>continuous</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>semicontinuous</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Continuity: a quality that is quality_of  some Fault Core Membrane. It describes the appearance continuity of the fault core membrane.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Reference: Braathen et al. (2009).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Value:Continuous, Seimicontinuous.</rdfs:comment>
+        <rdfs:label xml:lang="en">continuity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:damage_zone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:damage_zone">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_wall_volume"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_zone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_1D_boundary"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_tip_line"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Damage Zone: a geological object that is part_of only Fault Zone, externally connected with some Fault Core, and part_of some Fault Wall. It accommodates the low-strain and less intense brittle deformation.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Note: Researches like Kim et al. (2004), Choi et al. (2016) and Liao et al.(2020) show various anatomical views of damage zone from different perspectives and separate it into parts that have no clear physical boundaries. There is no absolute authoritative correct view of damage zone yet.</rdfs:comment>
+        <rdfs:comment xml:lang="en">References:  Caine et al. (1996)  Billi et al. (2003), Berg and Skar (2005), Choi et al. (2016), Celestino et al. (2020).</rdfs:comment>
+        <rdfs:label xml:lang="en">damage zone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:deformation_band_object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:deformation_band_object">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_generated_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:geological_deformation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Deformation Band: a geological object recognizable in from mm to cm in width, constituted_by some amount of rock and generated_by some Geological Deformation.It corresponds to a tabular strain localization feature that accommodates small displacement with strain-hardening.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">References: Shipton et al., (2005), Fossen et al.(2007);-, Torabi et al., (2021).</rdfs:comment>
+        <rdfs:label xml:lang="en">deformation band</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:detachment_fault -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:detachment_fault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_structure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_dip_angle"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Detachment Fault: a Fault Structure with Fault Dip in value less than 10° in which the displacement is almost horizontally.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">References : Van der Pluijm et al. (2004a),  Davis et al. (2011).</rdfs:comment>
+        <rdfs:label xml:lang="en">detachment fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:dextral_fault -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:dextral_fault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:strike-slip_fault"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:sinistral_fault"/>
         <obo:IAO_0000115 xml:lang="en">Dextral Fault: a Strike-Slip Fault that that the Fault Wall on the opposite side of the fault from an observer has moved to the right.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References: ;Van der Pluijm et al. (2004a). Fossen (2016a).</rdfs:comment>
         <rdfs:label xml:lang="en">dextral strike-slip fault</rdfs:label>
@@ -368,17 +841,64 @@ Superclass: Brittle Fault Rock (Def.13)</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Breccia -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:dip_separation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Breccia">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_rock"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:dip_separation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_maximum_separation"/>
+        <obo:IAO_0000115 xml:lang="en">Dip Separation: it is the separation measured along a line parallel to the dip direction.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">dip separation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:duplex_structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:duplex_structure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_array_structure"/>
+        <obo:IAO_0000115 xml:lang="en">Duplex : a set of imbricate (overlapping,stacking) thrusts which branch off from a single fault below and merge with a thrust fault above and which isolate rock bodies (horses).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">duplex structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:en_echelon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:en_echelon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system_structure"/>
+        <obo:IAO_0000115 xml:lang="en">En echelon: a set of parallel fault surfaces that lie between two bounding surfaces and are inclined at an angle to the bounding surfaces.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">en echelon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_array_structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_array_structure">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_structure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#structure_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Fault System Structure: a geological structure that is structure_of some Fault System. It is the arrangement among the Fault Walls of Fault Volumes, which are part_of a Fault System.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Reference : Van der Pluijm et al. (2004a)</rdfs:comment>
+        <rdfs:label xml:lang="en">fault system structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_breccia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_breccia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_rock"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Large_Clasts_proportion"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:large_clasts_proportion"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
                                 <owl:someValuesFrom>
@@ -404,10 +924,145 @@ Superclass: Brittle Fault Rock (Def.13)</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Gouge -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Gouge">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_rock"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_zone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_rock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_generated_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:shear_deformation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Fault Core: a geological object that is part_of only Fault Zone, generated_by some Brittle Shear Deformation, constituted_by some Brittle Fault Rock. It accommodates the high-strain major shear displacement.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">References: Caine et al.( 1996), Shipton et al. (2006), Wibberley et al.( 2008),  Faulkner et al. (2010);, Torabi et al. (2019).</rdfs:comment>
+        <rdfs:label xml:lang="en">fault core</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core_lens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core_lens">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:proto_lith"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Fault Core Lens: a geological object that is part_of some Fault Core, constituted_by some Amount of Rock and has¬_role¬¬ some Protolith.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Note: It often has a diamond shaped shape located inside the fault core. It corresponds to a portion of rock ripped off from a fault wall or fault core by shear slip surfaces.</rdfs:comment>
+        <rdfs:comment xml:lang="en">References; Lindanger et al. (2007), Braathen et al. (2009),  Gabrielsen et al., (2017)</rdfs:comment>
+        <rdfs:label xml:lang="en">fault core lens</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core_membrane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core_membrane">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:continuity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:smeared"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_rock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Fault Core Membrane: a geological object that is part_of some Fault Core, constituted_by some Brittle Fault Rock, has_quality some Smeared and has_quality some Continuity. It corresponds to a long and thin layer of the fault core.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Reference: Braathen et al., (2009).</rdfs:comment>
+        <rdfs:label xml:lang="en">fault core membrane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_dip_angle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_dip_angle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_orientation"/>
+        <obo:IAO_0000115 xml:lang="en">Fault Dip Angle: it measures the dipping angle of the Fault Surface Location.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fault dip angle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_dip_direction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_dip_direction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_orientation"/>
+        <obo:IAO_0000115 xml:lang="en">Fault Dip Direction: it measures the dipping direction of the Fault Surface Location.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fault dip direction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_displacement_indicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_displacement_indicator">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_structure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#structure_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:physical_slip_surface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Slip Surface Structure: a geological structure, which is structure_of some Physical Slip Surface. It is structure of the direction of the displacement between the two fault walls.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">References : Van der Pluijm et al. (2004a), Davis et al., (2011).</rdfs:comment>
+        <rdfs:label xml:lang="en">slip surface structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_gouge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_gouge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_rock"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -420,7 +1075,7 @@ Superclass: Brittle Fault Rock (Def.13)</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Large_Clasts_proportion"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:large_clasts_proportion"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
                                 <owl:someValuesFrom>
@@ -447,24 +1102,176 @@ Superclass: Brittle Fault Rock (Def.13)</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Surface_Location -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_horse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Surface_Location">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_horse">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:physical_slip_surface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Fault Horse: a geological object that is externally_connected_with only Physical Slip Surface. It is bounded by slip surfaces in 3D spatial region.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Note:  Gabrielsen et al (2017) and Lindager et al (2007) condiderv that  “Lens” and “Horse” are interchangeable terms for designating parts of FaultCore.  However, in the context of duplex structure ,the term  “horse” is used with another meaning . We have defined  the term ‘Fault  Horse”  according ti this lattere meaning</rdfs:comment>
+        <rdfs:comment xml:lang="en">Reference: Groshong Jr (2006).</rdfs:comment>
+        <rdfs:label xml:lang="en">fault horse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_material_entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_material_entity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rock_volume"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_wall_volume"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_zone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Fault Volume: a Rock Volume that is associated to  Fault Zone and Fault Wall. It has_part some Fault Wall and some Fault Zone.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Note: the concept of Fault Volume is about the Fault Zone and its Fault Wall (hanging wall, foot wall) which has undetermined boundaries.</rdfs:comment>
+        <rdfs:label xml:lang="en">fault volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_maximum_separation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_maximum_separation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_wall_volume"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Fault Maximum Separation: a relational quality is quality_of exactly 2 Fault Wall of a Fault Volume. It measures the separation between 2 Fault Wall of a Fault Volume and expressed by a real number indicating its value and a literal string indicating its measurement unit.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">References: Van der Pluijm et al., (2004a), Davis et al., (2011).</rdfs:comment>
+        <rdfs:label xml:lang="en">fault maximum separation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_orientation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_orientation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface_location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Fault Orientation: a quality is quality_of some Fault Surface Location. It measures the orientation properties of a Fault Surface.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fault orientation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_rock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_rock">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_generated_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:shear_deformation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Brittle Fault Rock: a amount of rock generated_by some Brittle Shear Deformation. It results from the crushing  of a former rock (Protolith).</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">References: Sibson (1977); Brodie et al. (2007), Woodcock and Mort (2008).</rdfs:comment>
+        <rdfs:label xml:lang="en">brittle fault rock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_strike_azimuth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_strike_azimuth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_orientation"/>
+        <obo:IAO_0000115 xml:lang="en">Fault Strike Azimuth: it measures the strike azimuth of the Fault Surface Location.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fualt strike azimuth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_structure">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_structure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_generically_depends_on"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_material_entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Fault Structure: a geological structure that is structure_of only Fault Volume. It is the pattern of human-eyes’ visible scale physical discontinuity and shear displacement of fault.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">References:  Torabi and Berg (2011), Fossen (2020).</rdfs:comment>
+        <rdfs:label xml:lang="en">fault structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002000"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_zone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#occupies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface_location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Fault Surface: a two-dimensional continuant fiat boundary related to a Fault Zone. It corresponds to the locus surface of the points that are equally distant to the two Fault Wall of the related Fault Zone.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fault surface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface_location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface_location">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000009"/>
-        <obo:IAO_0000115 xml:lang="en">.Fault Surface Location: a 2D Spatial Region that Fault Surface occupies in the spatial region.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">.Fault Surface Location: a two dimensional spatial region that Fault Surface occupies in the spatial region.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fault surface location</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Surface_Shape -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface_shape -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Surface_Shape">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface_shape">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_surface"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -501,709 +1308,21 @@ Superclass: Brittle Fault Rock (Def.13)</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault Surface Shape: a Quality is quality_of some Fault Surface. It does not reflect the exact topological specifications of a surface shape but an abstract geometry.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Fault Surface Shape: a quality is quality_of some Fault Surface. It does not reflect the exact topological specifications of a surface shape but an abstract geometry.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Value: Planar, Listric, Composite, Irregular.</rdfs:comment>
         <rdfs:label xml:lang="en">fault surface shape</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Large_Clasts_proportion -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Large_Clasts_proportion">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rock_quality"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Large Clasts Proportion: a Rock Quality inheres in rock. It quantifies the proportion of the rock has clasts larger than 2mm.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Reference: Woodcock and Mort ( 2008)).</rdfs:comment>
-        <rdfs:label xml:lang="en">large clasts proportion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Planar_Shape -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Planar_Shape">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Surface_Shape"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>planar</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label xml:lang="en">planar shape</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Sinistral_fault -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Sinistral_fault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#strike-slip_fault"/>
-        <obo:IAO_0000115 xml:lang="en">Sinistral Fault: a Strike-Slip Fault that the Fault Wall on the opposite side of the fault from an observer has moved to the left.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">References: ;Van der Pluijm et al. (2004a). Fossen (2016a).</rdfs:comment>
-        <rdfs:label xml:lang="en">sinistral strike-slip fault</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#anastomosing -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#anastomosing">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system_structure"/>
-        <obo:IAO_0000115 xml:lang="en">Anastomosing: a set of fault surfaces that merge and diverge along strike, thereby creating a braided pattern in map view or cross section.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">anastomosing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#antithetic_fault -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#antithetic_fault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#minor_fault"/>
-        <obo:IAO_0000115 xml:lang="en">Antithetic Fault: a Subsidiary Fault. It can be realized when a Fault Zone having a dip direction cojugate to that of the Major Fault Zone belonging to the same Fault System.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Reference: Van der Pluijm et al. (2004a)</rdfs:comment>
-        <rdfs:label xml:lang="en">antithetic fault</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#barrier -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#barrier">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_zone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Barrier: a Role that is role_of some Fault Zone that let fluid can&apos;t flow through.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Reference: Caine et al.( 1996)</rdfs:comment>
-        <rdfs:label xml:lang="en">barrier</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#chatter_mark -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#chatter_mark">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_displacement_indicator"/>
-        <obo:IAO_0000115 xml:lang="en">Chatter Mark: a small wedge-shaped structure that indicates one Fault Wall moves past another.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">chatter mark</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#cohesion -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#cohesion">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rock_quality"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:oneOf>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>cohesive</rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>non-cohesive</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </owl:oneOf>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Cohesion: a Rock Quality inheres in rock. It measures the capability of a rock  being broken into component granules with fingers or with the aid of a pen knife.
-Values: Cohesion, Non-cohesion</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Reference: Brodie et al. (2007).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Values: Cohesion, Non-cohesion</rdfs:comment>
-        <rdfs:label xml:lang="en">cohesion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#cohesive -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#cohesive">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#cohesion"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>cohesive</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label xml:lang="en">cohesive</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#conduit -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#conduit">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_zone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Conduit: a Role that is role_of some Fault Zone that can let fluid flow through.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Reference: Caine et al.( 1996)</rdfs:comment>
-        <rdfs:label xml:lang="en">conduit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#conjugate -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#conjugate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system_structure"/>
-        <obo:IAO_0000115 xml:lang="en">Conjugate: a number of fault surfaces can be grouped into two sets that are inclined to one another at an angle of about 60°.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">conjugate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#continuity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#continuity">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                <owl:someValuesFrom>
-                    <rdfs:Datatype>
-                        <owl:oneOf>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>continuous</rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>semicontinuous</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </owl:oneOf>
-                    </rdfs:Datatype>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Continuity: a Quality that is quality_of  some Fault Core Membrane. It describes the appearance continuity of the fault core membrane.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Reference: Braathen et al. (2009).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Value:Continuous, Seimicontinuous.</rdfs:comment>
-        <rdfs:label xml:lang="en">continuity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#continuous -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#continuous">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#continuity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>continuous</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#semicontinuous"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#damage_zone -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#damage_zone">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_wall_volume"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_zone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_1D_boundary"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_tip_line"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Damage Zone: a Geological Object that is part_of only Fault Zone, externally connected with some Fault Core, and part_of some Fault Wall. It accommodates the low-strain and less intense brittle deformation.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Note: Researches like Kim et al. (2004), Choi et al. (2016) and Liao et al.(2020) show various anatomical views of damage zone from different perspectives and separate it into parts that have no clear physical boundaries. There is no absolute authoritative correct view of damage zone yet.</rdfs:comment>
-        <rdfs:comment xml:lang="en">References:  Caine et al. (1996)  Billi et al. (2003), Berg and Skar (2005), Choi et al. (2016), Celestino et al. (2020).</rdfs:comment>
-        <rdfs:label xml:lang="en">damage zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#deformation_band_object -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#deformation_band_object">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
-                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_generated_by"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#geological_deformation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Deformation Band: a Geological Object recognizable in from mm to cm in width, constituted_by some Amount of Rock and generated_by some Geological Deformation.It corresponds to a tabular strain localization feature that accommodates small displacement with strain-hardening.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">References: Shipton et al., (2005), Fossen et al.(2007);-, Torabi et al., (2021).</rdfs:comment>
-        <rdfs:label xml:lang="en">deformation band</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#detachment_fault -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#detachment_fault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_structure"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_dip_angle"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                                <owl:someValuesFrom>
-                                    <rdfs:Datatype>
-                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-                                        <owl:withRestrictions rdf:parseType="Collection">
-                                            <rdf:Description>
-                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</xsd:maxInclusive>
-                                            </rdf:Description>
-                                        </owl:withRestrictions>
-                                    </rdfs:Datatype>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Detachment Fault: a Fault Structure with Fault Dip in value less than 10° in which the displacement is almost horizontally.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">References : Van der Pluijm et al. (2004a),  Davis et al. (2011).</rdfs:comment>
-        <rdfs:label xml:lang="en">detachment fault</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#dip_separation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#dip_separation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_maximum_separation"/>
-        <obo:IAO_0000115 xml:lang="en">Dip Separation: it is the separation measured along a line parallel to the dip direction.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">dip separation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#duplex_structure -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#duplex_structure">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_array_structure"/>
-        <obo:IAO_0000115 xml:lang="en">Duplex : a set of imbricate (overlapping,stacking) thrusts which branch off from a single fault below and merge with a thrust fault above and which isolate rock bodies (horses).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">duplex structure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#en_echelon -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#en_echelon">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system_structure"/>
-        <obo:IAO_0000115 xml:lang="en">En echelon: a set of parallel fault surfaces that lie between two bounding surfaces and are inclined at an angle to the bounding surfaces.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">en echelon</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_array_structure -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_array_structure">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_structure"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#structure_of"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault System Structure: a Geological Structure that is structure_of some Fault System. It is the arrangement among the Fault Walls of Fault Volumes, which are part_of a Fault System.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Reference : Van der Pluijm et al. (2004a)</rdfs:comment>
-        <rdfs:label xml:lang="en">fault system structure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_zone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_rock"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_generated_by"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#shear_deformation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault Core: a Geological Object that is part_of only Fault Zone, generated_by some Brittle Shear Deformation, constituted_by some Brittle Fault Rock. It accommodates the high-strain major shear displacement.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">References: Caine et al.( 1996), Shipton et al. (2006), Wibberley et al.( 2008),  Faulkner et al. (2010);, Torabi et al. (2019).</rdfs:comment>
-        <rdfs:label xml:lang="en">fault core</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core_lens -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core_lens">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#proto_lith"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault Core Lens: a Geological Object that is part_of some Fault Core, constituted_by some Amount of Rock and has¬_role¬¬ some Protolith.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Note: It often has a diamond shaped shape located inside the fault core. It corresponds to a portion of rock ripped off from a fault wall or fault core by shear slip surfaces.</rdfs:comment>
-        <rdfs:comment xml:lang="en">References; Lindanger et al. (2007), Braathen et al. (2009),  Gabrielsen et al., (2017)</rdfs:comment>
-        <rdfs:label xml:lang="en">fault core lens</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core_membrane -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core_membrane">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#continuity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#smeared"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_rock"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault Core Membrane: a Geological Object that is part_of some Fault Core, constituted_by some Brittle Fault Rock, has_quality some Smeared and has_quality some Continuity. It corresponds to a long and thin layer of the fault core.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Reference: Braathen et al., (2009).</rdfs:comment>
-        <rdfs:label xml:lang="en">fault core membrane</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_dip_angle -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_dip_angle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_orientation"/>
-        <obo:IAO_0000115 xml:lang="en">Fault Dip Angle: it measures the dipping angle of the Fault Surface Location.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">fault dip angle</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_dip_direction -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_dip_direction">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_orientation"/>
-        <obo:IAO_0000115 xml:lang="en">Fault Dip Direction: it measures the dipping direction of the Fault Surface Location.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">fault dip direction</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_displacement_indicator -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_displacement_indicator">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_structure"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#structure_of"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#physical_slip_surface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Slip Surface Structure: a Geological Structure, which is structure_of some Physical Slip Surface. It is structure of the direction of the displacement between the two fault walls.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">References : Van der Pluijm et al. (2004a), Davis et al., (2011).</rdfs:comment>
-        <rdfs:label xml:lang="en">slip surface structure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_horse -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_horse">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#physical_slip_surface"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault Horse: a Geological Object that is externally_connected_with only Physical Slip Surface. It is bounded by slip surfaces in 3D spatial region.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Note:  Gabrielsen et al (2017) and Lindager et al (2007) condiderv that  “Lens” and “Horse” are interchangeable terms for designating parts of FaultCore.  However, in the context of duplex structure ,the term  “horse” is used with another meaning . We have defined  the term ‘Fault  Horse”  according ti this lattere meaning</rdfs:comment>
-        <rdfs:comment xml:lang="en">Reference: Groshong Jr (2006).</rdfs:comment>
-        <rdfs:label xml:lang="en">fault horse</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_material_entity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_material_entity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rock_volume"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rock_volume"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_wall_volume"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_zone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault Volume: a Rock Volume that is associated to  Fault Zone and Fault Wall. It has_part some Fault Wall and some Fault Zone.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Note: the concept of Fault Volume is about the Fault Zone and its Fault Wall (hanging wall, foot wall) which has undetermined boundaries.</rdfs:comment>
-        <rdfs:label xml:lang="en">fault volume</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_maximum_separation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_maximum_separation">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_wall_volume"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault Maximum Separation: a Relational Quality is quality_of exactly 2 Fault Wall of a Fault Volume. It measures the separation between 2 Fault Wall of a Fault Volume and expressed by a real number indicating its value and a literal string indicating its measurement unit.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">References: Van der Pluijm et al., (2004a), Davis et al., (2011).</rdfs:comment>
-        <rdfs:label xml:lang="en">fault maximum separation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_orientation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_orientation">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Surface_Location"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault Orientation a Quality is quality_of some Fault Surface Location. It measures the orientation properties of a Fault Surface.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">fault orientation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_rock -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_rock">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_generated_by"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#shear_deformation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Brittle Fault Rock: a Amount of Rock generated_by some Brittle Shear Deformation. It results from the crushing  of a former rock (Protolith).</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">References: Sibson (1977); Brodie et al. (2007), Woodcock and Mort (2008).</rdfs:comment>
-        <rdfs:label xml:lang="en">brittle fault rock</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_strike_azimuth -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_strike_azimuth">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_orientation"/>
-        <obo:IAO_0000115 xml:lang="en">Fault Strike Azimuth: it measures the strike azimuth of the Fault Surface Location.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">fualt strike azimuth</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_structure -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_structure">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_structure"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_generically_depends_on"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_material_entity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault Structure a Geological Structure that is structure_of only Fault Volume. It is the pattern of human-eyes’ visible scale physical discontinuity and shear displacement of fault.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">References:  Torabi and Berg (2011), Fossen (2020).</rdfs:comment>
-        <rdfs:label xml:lang="en">fault structure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_surface -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_surface">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002000"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_zone"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#occupies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Surface_Location"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault Surface: a 2D Continuant Fiat Boundary related to a Fault Zone. It corresponds to the locus surface of the points that are equally distant to the two Fault Wall of the related Fault Zone.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">fault surface</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rock_volume"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_material_entity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_material_entity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Fault System: a Rock Volume and has_part some Fault Volume.</obo:IAO_0000115>
@@ -1212,47 +1331,47 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system_structure -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system_structure -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system_structure">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system_structure">
         <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_structure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#structure_of"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault Array Structure: a Geological Structure that is structure_of some Fault System. It is the spatial relationship and geometric arrangement among the Fault Surface related to multiple Fault Zone of a Fault System.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Fault Array Structure: a geological structure that is structure_of some Fault System. It is the spatial relationship and geometric arrangement among the Fault Surface related to multiple Fault Zone of a Fault System.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Reference : Van der Pluijm et al. (2004a).</rdfs:comment>
         <rdfs:label xml:lang="en">fault array structure</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_tip_line -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_tip_line -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_tip_line">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_tip_line">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000142"/>
-        <obo:IAO_0000115 xml:lang="en">Fault Tip Line: a 1D Continuant Fiat-Boundary that is the locus of the points of the Fault Zone where theoretically the shear displacement goes to zero</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Fault Tip Line: a two-dimensional continuant fiat-boundary that is the locus of the points of the Fault Zone where theoretically the shear displacement goes to zero</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fault tip line</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_wall_volume -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_wall_volume -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_wall_volume">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rock_volume"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_wall_volume">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rock_volume"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_material_entity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_material_entity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Fault Wall: a Rock Volume that is part_of Fault Volume and externally_connected_with Fault Core. It corresponds to the volume that is located aside the Fault Core.</obo:IAO_0000115>
@@ -1261,47 +1380,47 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_zone -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_zone -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_zone">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_zone">
         <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_material_entity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_material_entity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#damage_zone"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:damage_zone"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#shear_deformation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:shear_deformation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002002"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_surface"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_1D_boundary"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_tip_line"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_tip_line"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Fault Zone: a Geological Object that is part_of  some Fault Volume. A Fault Zone is participates_in some Brittle Shear Deformation, and Fault Zone has_part some Fault Core and has_part some Damage Zone.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Fault Zone: a geological object that is part_of  some Fault Volume. A Fault Zone is participates_in some Brittle Shear Deformation, and Fault Zone has_part some Fault Core and has_part some Damage Zone.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">It materializes a physical discontinuity and a visible sharp shear displacement.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Reference: Caine et al., (1996), Torabi and Berg, (2011),Fossen, (2020).</rdfs:comment>
         <rdfs:label xml:lang="en">fault zone</rdfs:label>
@@ -1309,36 +1428,36 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#flower -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:flower -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#flower">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:flower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system_structure"/>
         <obo:IAO_0000115 xml:lang="en">Flower: a set of fault surfaces related to strike-slip fault structure that stack together as petals of a flower in cross-section view.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flower</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#footwall -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:footwall -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#footwall">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:footwall">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_wall_volume"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_wall_volume"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Foot Wall: a Role that is role_of  some Fault Wall located below the Fault Surface to which it is related.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Foot Wall: a role that is role_of  some Fault Wall located below the Fault Surface to which it is related.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References:  Van der Pluijm et al., (2004a). Davis et al., (2011).</rdfs:comment>
         <rdfs:label xml:lang="en">footwall</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#geological_deformation -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:geological_deformation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#geological_deformation">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:geological_deformation">
         <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1356,40 +1475,40 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Geological Deformation: a Geological Process, which changes the shape and/or the volume of some Material Entity that is constituted_by some Amount of Rock.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Geological Deformation: a geological process, which changes the shape and/or the volume of some material entity that is constituted_by some amount of rock.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Reference: Fossen (2016b).</rdfs:comment>
         <rdfs:label xml:lang="en">geological deformation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#graben -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:graben -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#graben">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:graben">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#horst_and_graben_structure"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:horst_and_graben_structure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_wall_volume"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_wall_volume"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Graben: a Role is role_of  some Fault Wall when this Fault wall has_role some Hanging Wall of two normal faults dipping towards each other.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Graben: a role is role_of  some Fault Wall when this Fault wall has_role some Hanging Wall of two normal faults dipping towards each other.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References: Van der Pluijm et al. (2004a), Davis et al., (2011), Fossen (2016a)</rdfs:comment>
         <rdfs:label xml:lang="en">graben</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#growth_fault -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:growth_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#growth_fault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:growth_fault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_structure"/>
         <obo:IAO_0000115 xml:lang="en">Growth Fault (synonyms: Syn-sedimentation fault): a Fault Structure  in which the portion above the fault surface is thicker than the portion below .</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References: Kuecher et al. (2001), Baudon and Cartwright  (2008).</rdfs:comment>
         <rdfs:label xml:lang="en">growth fault</rdfs:label>
@@ -1397,137 +1516,94 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#hanging_wall -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:hanging_wall -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#hanging_wall">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:hanging_wall">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_wall_volume"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_wall_volume"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Hanging Wall: a Role that is role_of  some Fault Wall located above the Fault Surface to which it is related.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Hanging Wall: a role that is role_of  some Fault Wall located above the Fault Surface to which it is related.</rdfs:comment>
         <rdfs:comment xml:lang="en">References:  Van der Pluijm et al., (2004a), Davis et al., (2011).</rdfs:comment>
         <rdfs:label xml:lang="en">hanging wall</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#heave -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:heave -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#heave">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_maximum_separation"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:heave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_maximum_separation"/>
         <obo:IAO_0000115 xml:lang="en">Heave: it is the horizontal component of Dip Separation.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">heave</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#horst -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:horst -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#horst">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:horst">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#horst_and_graben_structure"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:horst_and_graben_structure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_wall_volume"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_wall_volume"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Horst: a Role is role_of  some Fault Wall when this Fault Wall has_role some Foot Wall of two normal faults having divergent dips.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Horst: a role is role_of  some Fault Wall when this Fault Wall has_role some Foot Wall of two normal faults having divergent dips.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References: Van der Pluijm et al. (2004a), Davis et al., (2011), Fossen (2016a)</rdfs:comment>
         <rdfs:label xml:lang="en">horst</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#horst_and_graben_structure -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:horst_and_graben_structure -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#horst_and_graben_structure">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_array_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:horst_and_graben_structure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_array_structure"/>
         <obo:IAO_0000115 xml:lang="en">Horst and Graben: a set oFault Wall that are altrernately moved up and down along normal faults.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">horst and graben structure</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#irregular -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:large_clasts_proportion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#irregular">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Surface_Shape"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>irregular</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Surface_Shape"/>
-        <rdfs:label xml:lang="en">irregular</rdfs:label>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:large_clasts_proportion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rock_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Large Clasts Proportion: a Rock Quality inheres in rock. It quantifies the proportion of the rock has clasts larger than 2mm.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Reference: Woodcock and Mort ( 2008)).</rdfs:comment>
+        <rdfs:label xml:lang="en">large clasts proportion</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#is_smeared -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:low-angle_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#is_smeared">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#smeared"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>is smeared</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#smeared"/>
-        <rdfs:label xml:lang="en">is smeared</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#low-angle_fault -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#low-angle_fault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:low-angle_fault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_structure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_dip_angle"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_dip_angle"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
                                 <owl:someValuesFrom>
@@ -1553,17 +1629,17 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#major_fault -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:major_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#major_fault">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:major_fault">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_zone"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_zone"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Major Fault (synonym: Main fault): a Role is role_of  some Fault Zone. It can be realized when a Fault Zone having a significantly larger displacement than the others within a Fault System.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Major Fault (synonym: Main fault): a role is role_of  some Fault Zone. It can be realized when a Fault Zone having a significantly larger displacement than the others within a Fault System.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Reference: Van der Pluijm et al. (2004a)</rdfs:comment>
         <rdfs:comment xml:lang="en">synonym: main fault, first order faultc, principle fault</rdfs:comment>
         <rdfs:label xml:lang="en">major fault</rdfs:label>
@@ -1571,18 +1647,18 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#minor_fault -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:minor_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#minor_fault">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#subsidiary_fault"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:minor_fault">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:subsidiary_fault"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_zone"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_zone"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Minor Fault (synonym: Subsidiary fault, Spaly fault): a Role is role_of  some Fault Zone. It can be realized when a Fault Zone having a minor displacement than a Major Fault within a Fault System.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Minor Fault (synonym: Subsidiary fault, Spaly fault): a role is role_of  some Fault Zone. It can be realized when a Fault Zone having a minor displacement than a Major Fault within a Fault System.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Refrences: Song and Cawood ( 2001), Nishiwaki and Lin (2019)</rdfs:comment>
         <rdfs:comment xml:lang="en">synonym: Subsidiary fault, Spaly fault</rdfs:comment>
         <rdfs:label>minor fault</rdfs:label>
@@ -1590,59 +1666,30 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#negative_structure -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:negative_structure -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#negative_structure">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_array_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:negative_structure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_array_structure"/>
         <obo:IAO_0000115 xml:lang="en">Negative Flower Structure: a set of Fault Volume that their corresponding Fault Walls are moved relatively downward and the corresponding Fault System has_structure some Flower.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">negative structure</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#non-cohesive -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:nonsystematic -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#non-cohesive">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#cohesion"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>non-cohesive</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label xml:lang="en">non-cohesive</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#nonsystematic -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#nonsystematic">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:nonsystematic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system_structure"/>
         <obo:IAO_0000115 xml:lang="en">Nonsystematic (random): a number of fault surfaces in a wide range of orientations, no systematic pattern can be concluded.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">nonsystematic</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#normal_fault -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:normal_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#normal_fault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:normal_fault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_structure"/>
         <obo:IAO_0000115 xml:lang="en">a Fault Structure in which the Fault Wall that  has_role Hanging Wall is lower or has moved downthrown relative to the Fault Wall that has_role Footwall.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References : Van der Pluijm et al. (2004a),  Davis et al. (2011), Fossen  (2016a).</rdfs:comment>
         <rdfs:label xml:lang="en">normal fault</rdfs:label>
@@ -1650,58 +1697,28 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#not_smeared -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:oblique_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#not_smeared">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#smeared"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>not smeared</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#smeared"/>
-        <rdfs:label xml:lang="en">not smeared</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#oblique_fault -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#oblique_fault">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:oblique_fault">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#normal_fault"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#strike-slip_fault"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:normal_fault"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:strike-slip_fault"/>
                         </owl:intersectionOf>
                     </owl:Class>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#reverse_fault"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#strike-slip_fault"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:reverse_fault"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:strike-slip_fault"/>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_structure"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_structure"/>
         <obo:IAO_0000115 xml:lang="en">Oblique Fault: a Fault Structure that is a conjunction of Strike-Slip Fault and Normal Fault, or conjunction of Strike-Slip Fault and Reverse Fault.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Reference Van der Pluijm et al. (2004a)).</rdfs:comment>
         <rdfs:label xml:lang="en">oblique fault</rdfs:label>
@@ -1709,19 +1726,19 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#parallel -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:parallel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#parallel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:parallel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system_structure"/>
         <obo:IAO_0000115 xml:lang="en">Parallel: a set of fault surfaces that roughly parallel one another.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">parallel</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#permeability -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:permeability -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#permeability">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:permeability">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1729,49 +1746,49 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Permeability: a Disposition disposition_of some Amount of Rock. It quantifies the capability a rock of letting a liquid or gas flow through under pressure.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Permeability: a disposition that is  disposition_of some Amount of Rock. It quantifies the capability a rock of letting a liquid or gas flow through under pressure.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References: Ahmed et al. (1991), Bjorlykke (2010).</rdfs:comment>
         <rdfs:label xml:lang="en">permeability</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#physical_slip_surface -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:physical_slip_surface -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#physical_slip_surface">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:physical_slip_surface">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_wall_volume"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_wall_volume"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Physical Slip Surface: a Fiat Object Part that is part_of some Fault Wall and externally_connected_with some Fault Core. It is the physical surface part of the wall, where major slip of a fault occurred.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Physical Slip Surface: a fiat object part that is part_of some Fault Wall and externally_connected_with some Fault Core. It is the physical surface part of the wall, where major slip of a fault occurred.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References: Davis et al., (2011a); Shipton et al., (2006); Watterson, (1986).</rdfs:comment>
         <rdfs:label xml:lang="en">physical slip surface</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#positive_structure -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:positive_structure -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#positive_structure">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_array_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:positive_structure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_array_structure"/>
         <obo:IAO_0000115 xml:lang="en">Positive Flower Structure: a set of Fault Volume that their corresponding Fault Walls are moved relatively upward and the corresponding Fault System has_structure some Flower.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">positive structure</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#proto_lith -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:proto_lith -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#proto_lith">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:proto_lith">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1779,44 +1796,44 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Protolith Role: a Role that is role_of  some Amount of Rock. It indicates the original rock type of the rock before the rock participate¬¬_in some Geological Process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Protolith Role: a role that is role_of  some amount of rock. It indicates the original rock type of the rock before the rock participate¬¬_in some Geological Process.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References: Rowley et al. (1997). Hoskin and Black (2000)</rdfs:comment>
         <rdfs:label xml:lang="en">protolith role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#relay -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:relay -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#relay">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_system_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:relay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_system_structure"/>
         <obo:IAO_0000115 xml:lang="en">Relay: In map view, a set of parallel or subparallel non-coplanar fault surfaces that are spaced at a distance from one another across strike, but whose traces overlap or shows a “relayed” (transferred) pattern with one another along strike.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">relay</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#relay_damage_zone -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:relay_damage_zone -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#relay_damage_zone">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:relay_damage_zone">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rock_volume"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rock_volume"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Relay Zone: a Role is role_of  some Rock Volume. It can be realized when a Rock Volume constitutes a link between two adajacent Fault Zone having similar characteristics and shows the displacement is transferred.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Relay Zone: a role is role_of  some Rock Volume. It can be realized when a Rock Volume constitutes a link between two adajacent Fault Zone having similar characteristics and shows the displacement is transferred.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References: Childs et al., (1995), Groshong Jr, (2006), Davis et al.,(2011)</rdfs:comment>
         <rdfs:label xml:lang="en">relay zone</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#reverse_fault -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:reverse_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#reverse_fault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:reverse_fault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_structure"/>
         <obo:IAO_0000115 xml:lang="en">Reverse Fault: a Fault Structure in which Fault Wall has_role Hanging Wall is higher or has moved upthrown relative to the Fault Wall has_role Footwall.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References : Van der Pluijm et al. (2004a),  Davis et al. (2011), Fossen  (2016a).</rdfs:comment>
         <rdfs:label xml:lang="en">reverse fault</rdfs:label>
@@ -1824,9 +1841,9 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rock_quality -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rock_quality -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rock_quality">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rock_quality">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1834,15 +1851,15 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
                 <owl:allValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a Quality is quality_of only Amount of Rock. It measures the property that related to rock itself.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Rock Quality: a quality that is quality_of only Amount of Rock. It measures the property that related to rock itself.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">rock quality</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rock_volume -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rock_volume -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rock_volume">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rock_volume">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1850,16 +1867,16 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Rock Volume: a Fiat Object Part part_of some Geological Object and constituted_by some Amount of Rock.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Rock Volume: a fiat object part part_of some geological object and constituted_by some amount of rock.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">rock volume</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rotation_fault -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rotation_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rotation_fault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rotation_fault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_structure"/>
         <obo:IAO_0000115 xml:lang="en">Rotation Fault (synonyms: Scissors Fault): a Fault Structure in which one Fault Wall rotated with respect to the other  around an axis perpendicular to the Fault Surface.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Reference Van der Pluijm et al. (2004a)).</rdfs:comment>
         <rdfs:label xml:lang="en">rotation fault</rdfs:label>
@@ -1867,73 +1884,56 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#semicontinuous -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:shear_deformation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#semicontinuous">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#continuity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#has_quality_value"/>
-                        <owl:allValuesFrom>
-                            <rdfs:Datatype>
-                                <owl:oneOf>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>semicontinuous</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </owl:oneOf>
-                            </rdfs:Datatype>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#shear_deformation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#shear_deformation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#geological_deformation"/>
-        <obo:IAO_0000115 xml:lang="en">Brittle Shear Deformation: a Geological Deformation, which applies a Material Entity constituted_by Rock shear stress and consequently induces physical discontinuities and displacements inside it.</obo:IAO_0000115>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:shear_deformation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:geological_deformation"/>
+        <obo:IAO_0000115 xml:lang="en">Brittle Shear Deformation: a Geological Deformation, which applies a material entity constituted_by a amount of rock shear stress and consequently induces physical discontinuities and displacements inside it.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References:  Sibson (1977); Van der Pluijm et al. (2004b), Fossen (2016b).</rdfs:comment>
         <rdfs:label xml:lang="en">brittle shear deformation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#slickenline -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:sinistral_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#slickenline">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_displacement_indicator"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:sinistral_fault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:strike-slip_fault"/>
+        <obo:IAO_0000115 xml:lang="en">Sinistral Fault: a Strike-Slip Fault that the Fault Wall on the opposite side of the fault from an observer has moved to the left.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">References: ;Van der Pluijm et al. (2004a). Fossen (2016a).</rdfs:comment>
+        <rdfs:label xml:lang="en">sinistral strike-slip fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:slickenline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:slickenline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_displacement_indicator"/>
         <obo:IAO_0000115 xml:lang="en">Slickenline: a parallel straight line scratches or grooves.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">slickenline</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#slickenside -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:slickenside -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#slickenside">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_displacement_indicator"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:slickenside">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_displacement_indicator"/>
         <obo:IAO_0000115 xml:lang="en">Slickenside: smooth polished surface of parallel scratches or grooves.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">slickenside</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#smeared -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:smeared -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#smeared">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:smeared">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_core_membrane"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_core_membrane"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1958,7 +1958,7 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Smeared:a Quality that is quality_of  some Fault Core Membrane. It specifies whether the membrane has been ductically stretched.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Smeared:a quality that is quality_of  some Fault Core Membrane. It specifies whether the membrane has been ductically stretched.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Note: the mechanisms of the smearing process such as normal stress increase, water content of clay increase, change of the shear strength of clay are not considered in the scope of this ontology work (Schmatz et al., 2010; Vrolijk et al., 2016).</rdfs:comment>
         <rdfs:comment xml:lang="en">Reference: Braathen et al. (2009).</rdfs:comment>
         <rdfs:comment xml:lang="en">Values: Is Smeared, Not Smeared</rdfs:comment>
@@ -1967,10 +1967,10 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#strike-slip_fault -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:strike-slip_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#strike-slip_fault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_structure"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:strike-slip_fault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_structure"/>
         <obo:IAO_0000115 xml:lang="en">Strike-Slip Fault: a Fault Structure that two Fault Wall move relative horizontally to each other laterally in a vertical plane that is approximately parallel to the strike of the fault.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References : Van der Pluijm et al. (2004a),  Davis et al. (2011), Fossen  (2016a).</rdfs:comment>
         <rdfs:label xml:lang="en">strike-slip fault</rdfs:label>
@@ -1978,24 +1978,24 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#strike_separation -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:strike_separation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#strike_separation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_maximum_separation"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:strike_separation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_maximum_separation"/>
         <obo:IAO_0000115 xml:lang="en">Strike Separation: it is the separation measured along the strike of the fault.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">strike separation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#subsidiary_fault -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:subsidiary_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#subsidiary_fault">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:subsidiary_fault">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_zone"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_zone"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">subsidiary fault</rdfs:label>
@@ -2003,10 +2003,10 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#synthetic_fault -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:synthetic_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#synthetic_fault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#minor_fault"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:synthetic_fault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:minor_fault"/>
         <obo:IAO_0000115 xml:lang="en">Synthetic Fault: a Subsidiary Fault. It can be realized when a Fault Zone having a dip direction parallel to that of the Major Fault Zone belonging to the same Fault System.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Reference: Van der Pluijm et al. (2004a)</rdfs:comment>
         <rdfs:label xml:lang="en">synthetic fault</rdfs:label>
@@ -2014,28 +2014,28 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#throw -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:throw -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#throw">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_maximum_separation"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:throw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_maximum_separation"/>
         <obo:IAO_0000115 xml:lang="en">Throw: it is the vertical component of Dip Separation.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">throw</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#thrust_fault -->
+    <!-- http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:thrust_fault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#thrust_fault">
+    <owl:Class rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:thrust_fault">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#low-angle_fault"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#reverse_fault"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:low-angle_fault"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:reverse_fault"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#reverse_fault"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:reverse_fault"/>
         <obo:IAO_0000115 xml:lang="en">Thrust Fault: a conjunction of Reverse Fault and Low-angle Fault</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">References : Van der Pluijm et al. (2004a),  Davis et al. (2011), Fossen  (2016a).</rdfs:comment>
         <rdfs:label xml:lang="en">thrust fault</rdfs:label>
@@ -2069,57 +2069,57 @@ Values: Cohesion, Non-cohesion</obo:IAO_0000115>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000145"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Surface_Shape"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#continuity"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_orientation"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#rock_quality"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#smeared"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:continuity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_orientation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_surface_shape"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:rock_quality"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:smeared"/>
             <rdf:Description rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_age"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Cataclasite"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Breccia"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#Fault_Gouge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:anastomosing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:conjugate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:en_echelon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:nonsystematic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:parallel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:relay"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#anastomosing"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#conjugate"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#en_echelon"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#nonsystematic"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#parallel"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#relay"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:cataclasite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_breccia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_gouge"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#dip_separation"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#heave"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#strike_separation"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#throw"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:dip_separation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:heave"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:strike_separation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:throw"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#duplex_structure"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#horst_and_graben_structure"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#negative_structure"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#positive_structure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:duplex_structure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:horst_and_graben_structure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:negative_structure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:positive_structure"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_dip_angle"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_dip_direction"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#fault_strike_azimuth"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_dip_angle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_dip_direction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/quy/ontologies/2022/8/untitled-ontology-33#GeoFault:fault_strike_azimuth"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
